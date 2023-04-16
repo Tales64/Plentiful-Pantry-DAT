@@ -1,4 +1,3 @@
-let playerState = 'fly'
 // const dropdown = document.getElementById('animations');
 // dropdown.addEventListener('change', function(event) {
     //     playerState = event.target.value;
@@ -11,6 +10,19 @@ let playerState = 'fly'
     // const CANVAS_HEIGHT = canvas.height = 600;
     
     // ===================================================================================================================
+    // Dragon animation
+    // function animate (){
+        //     ctx2.clearRect(0, 0, CANVAS_WIDTH2, CANVAS_HEIGHT2)
+        
+        // }
+        
+        // animate();
+        
+        
+        
+        
+        window.addEventListener('load',function(){
+    let playerState = 'fly'
     
     const canvas2 = document.getElementById('canvas2');
     const ctx2 = canvas2.getContext('2d');
@@ -21,7 +33,7 @@ let playerState = 'fly'
     let dragonFrame = 0;
     
     const playerImage = new Image();
-    playerImage.src = '/Images/Dragon (6).png';
+    playerImage.src = '/images/dragon (6).png';
     const spriteWidth = 573;
     const spriteHeight = 582;
     
@@ -94,38 +106,26 @@ yPosition:100
         spriteAnimations[state.name]= frames;
     });
     console.log(spriteAnimations)
-// Dragon animation
-    // function animate (){
-    //     ctx2.clearRect(0, 0, CANVAS_WIDTH2, CANVAS_HEIGHT2)
-       
-    // }
-    
-    // animate();
-    
-    
-    
-    const backgroundLayer1 = new Image();
-    backgroundLayer1.src = '/Images/back sky.png';
-    const backgroundLayer2 = new Image();
-    backgroundLayer2.src = '/Images/sky.png';
-        const backgroundLayer3 = new Image();
-        backgroundLayer3.src = '/Images/Clouds behind.png';
-        const backgroundLayer4 = new Image();
-        backgroundLayer4.src = '/Images/MOUNTAINS back.png';
-        const backgroundLayer5 = new Image();
-        backgroundLayer5.src = '/Images/Mountains.png';
-        const backgroundLayer6 = new Image();
-        backgroundLayer6.src = '/Images/Clouds.png';
-        const backgroundLayer7 = new Image();
-        backgroundLayer7.src = '/Images/Trees.png';
-        const backgroundLayer8 = new Image();
-        backgroundLayer8.src = '/Images/Water.png';
-        const backgroundLayer9 = new Image();
-        backgroundLayer9.src = '/Images/Waves.png';
+const backgroundLayer1 = new Image();
+backgroundLayer1.src = '/images/back sky.png';
+const backgroundLayer2 = new Image();
+backgroundLayer2.src = '/images/sky.png';
+    const backgroundLayer3 = new Image();
+    backgroundLayer3.src = '/images/clouds behind.png';
+    const backgroundLayer4 = new Image();
+    backgroundLayer4.src = '/images/mountains back.png';
+    const backgroundLayer5 = new Image();
+    backgroundLayer5.src = '/images/mountains.png';
+    const backgroundLayer6 = new Image();
+    backgroundLayer6.src = '/images/clouds.png';
+    const backgroundLayer7 = new Image();
+    backgroundLayer7.src = '/images/trees.png';
+    const backgroundLayer8 = new Image();
+    backgroundLayer8.src = '/images/water.png';
+    const backgroundLayer9 = new Image();
+    backgroundLayer9.src = '/images/waves.png';
 const backgroundLayer10 = new Image();
-backgroundLayer10.src = '/Images/Land.png';
-
-window.addEventListener('load',function(){
+backgroundLayer10.src = '/images/land.png';
     // const slider = document.getElementById('slider')
     // slider.value = gameSpeed
     // const ShowSpeed = document.getElementById('showGameSpeed')
@@ -169,9 +169,9 @@ window.addEventListener('load',function(){
     const layer3 = new Layer(backgroundLayer3, 0.3);
     const layer4 = new Layer(backgroundLayer4, 0.0);
     const layer5 = new Layer(backgroundLayer5, 0.2);
-const layer6 = new Layer(backgroundLayer6, 0.01);
-const layer7 = new Layer(backgroundLayer7, 0.1);
-const layer8 = new Layer(backgroundLayer8, 0.3);
+const layer6 = new Layer(backgroundLayer6, 0.03);
+const layer7 = new Layer(backgroundLayer7, 0.4);
+const layer8 = new Layer(backgroundLayer8, 0.5);
 const layer9 = new Layer(backgroundLayer9, 1.0);
 const layer10 = new Layer(backgroundLayer10, 0.7);
 
