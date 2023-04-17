@@ -1,27 +1,4 @@
-// const dropdown = document.getElementById('animations');
-// dropdown.addEventListener('change', function(event) {
-    //     playerState = event.target.value;
-    // })
-    
-    // const canvas = document.getElementById('canvas1');
-    
-    // const ctx = canvas.getContext('2d');
-    // const CANVAS_WIDTH = canvas.width = 600;
-    // const CANVAS_HEIGHT = canvas.height = 600;
-    
-    // ===================================================================================================================
-    // Dragon animation
-    // function animate (){
-        //     ctx2.clearRect(0, 0, CANVAS_WIDTH2, CANVAS_HEIGHT2)
-        
-        // }
-        
-        // animate();
-        
-        
-        
-        
-        window.addEventListener('load',function(){
+//   window.addEventListener('load',function(){
     let playerState = 'fly'
     
     const canvas2 = document.getElementById('canvas2');
@@ -126,16 +103,7 @@ backgroundLayer2.src = '/images/sky.png';
     backgroundLayer9.src = '/images/waves.png';
 const backgroundLayer10 = new Image();
 backgroundLayer10.src = '/images/land.png';
-    // const slider = document.getElementById('slider')
-    // slider.value = gameSpeed
-    // const ShowSpeed = document.getElementById('showGameSpeed')
-    // showGameSpeed.innerHTML = gameSpeed;
-    // slider.addEventListener('change', function(e){
-    //     console.log(e)
-    //     gameSpeed = e.target.value;
-    //     // showGameSpeed.innerHTML = e.target.value
-    // }
-    // )
+  
     
     class Layer {
         constructor(image, speedModifier){
@@ -194,7 +162,7 @@ function animate(){
     requestAnimationFrame(animate);
 };
 animate();
-})
+// })
 // ===================================================================================================================
 
 
