@@ -1,5 +1,5 @@
 //   window.addEventListener('load',function(){
-    let playerState = 'fly'
+    let playerState = 'walk'
     
     const canvas2 = document.getElementById('canvas2');
     const ctx2 = canvas2.getContext('2d');
@@ -21,8 +21,8 @@
     const animationStates= [
         {name: "walk", 
      frames:12, 
-     xPosition:100,
-     yPosition:100
+     xPosition:1150,
+     yPosition:575
     },
     {name:"fly",
     frames:9,  
@@ -156,7 +156,7 @@ function animate(){
         object.draw();
         
     });
-    ctx2.drawImage(playerImage, frameX, frameY, spriteWidth, spriteHeight, 100, 100, 150, 150);
+    ctx2.drawImage(playerImage, frameX, frameY, spriteWidth, spriteHeight, 100, 100, 300, 300);
     dragonFrame++;
     gameFrame--;
     requestAnimationFrame(animate);
