@@ -64,7 +64,7 @@ let gameFrame = 0;
 let dragonFrame = 0;
 
 const playerImage = new Image();
-playerImage.src = "dragon.png";
+playerImage.src = "/images/dragon.png";
 const spriteWidth = 573;
 const spriteHeight = 582;
 
@@ -97,25 +97,25 @@ animationStates.forEach((state, index) => {
 });
 console.log(spriteAnimations);
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = "backsky.png";
+backgroundLayer1.src = "/images/backsky.png";
 const backgroundLayer2 = new Image();
-backgroundLayer2.src = "sky.png";
+backgroundLayer2.src = "/images/sky.png";
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = "cloudsbehind.png";
+backgroundLayer3.src = "/images/cloudsbehind.png";
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = "mountainsback.png";
+backgroundLayer4.src = "/images/mountainsback.png";
 const backgroundLayer5 = new Image();
-backgroundLayer5.src = "mountains.png";
+backgroundLayer5.src = "/images/mountains.png";
 const backgroundLayer6 = new Image();
-backgroundLayer6.src = "clouds.png";
+backgroundLayer6.src = "/images/clouds.png";
 const backgroundLayer7 = new Image();
-backgroundLayer7.src = "trees.png";
+backgroundLayer7.src = "/images/trees.png";
 const backgroundLayer8 = new Image();
-backgroundLayer8.src = "water.png";
+backgroundLayer8.src = "/images/water.png";
 const backgroundLayer9 = new Image();
-backgroundLayer9.src = "waves.png";
+backgroundLayer9.src = "/images/waves.png";
 const backgroundLayer10 = new Image();
-backgroundLayer10.src = "land.png";
+backgroundLayer10.src = "/images/land.png";
 
 class Layer {
   constructor(image, speedModifier) {
