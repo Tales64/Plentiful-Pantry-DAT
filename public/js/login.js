@@ -64,7 +64,7 @@ let gameFrame = 0;
 let dragonFrame = 0;
 
 const playerImage = new Image();
-playerImage.src = "/images/dragon (6).png";
+playerImage.src = "dragon.png";
 const spriteWidth = 573;
 const spriteHeight = 582;
 
@@ -97,13 +97,13 @@ animationStates.forEach((state, index) => {
 });
 console.log(spriteAnimations);
 const backgroundLayer1 = new Image();
-backgroundLayer1.src = "back sky.png";
+backgroundLayer1.src = "backsky.png";
 const backgroundLayer2 = new Image();
 backgroundLayer2.src = "sky.png";
 const backgroundLayer3 = new Image();
-backgroundLayer3.src = "clouds behind.png";
+backgroundLayer3.src = "cloudsbehind.png";
 const backgroundLayer4 = new Image();
-backgroundLayer4.src = "mountains back.png";
+backgroundLayer4.src = "mountainsback.png";
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = "mountains.png";
 const backgroundLayer6 = new Image();
