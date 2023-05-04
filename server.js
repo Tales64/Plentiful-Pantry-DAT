@@ -37,6 +37,11 @@ app.set('view engine', 'handlebars');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.get("/images/:filename", async(req, res)=>{
+  res.sendFile(path.join(__dirname, "public", "images", req.params.filename));
+})
+
 app.use(express.static(path.join(__dirname, 'public')));
 // The root is set to profile page
 // If not login, it will reroute to login page instead
